@@ -1,0 +1,17 @@
+CREATE DATABASE test;
+
+USE test;
+
+CREATE TABLE users (
+ id INT(8) PRIMARY KEY AUTO_INCREMENT,
+ name VARCHAR(25),
+ age INT(3),
+ isAdmin BIT,
+ createdDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+INSERT INTO users VALUES (NULL, 'John', 20, 1, NULL);
+INSERT INTO users VALUES (NULL, 'Jack', 21, 0, NULL);
+INSERT INTO users VALUES (NULL, 'Peter', 22, 0, NULL);
+INSERT INTO users VALUES (NULL, 'Joseph', 23, 0, NULL);
+INSERT INTO users VALUES (NULL, 'Kate', 24, 0, NULL);
+
